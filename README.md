@@ -24,24 +24,24 @@ Instalación y Uso - Requisitos
 
 - Clonar el repositorio desde GitHub:
 
-git clone https://github.com/tuusuario/challange-amigo-secreto.git
+git clone https://github.com/Joselo225/challenge-amigo-secreto_esp-main.git
 
 O descargar el código fuente en formato ZIP y extraerlo.
 
-Navegar hasta la carpeta del proyecto:
+- Navegar hasta la carpeta del proyecto:
 
 cd challange-amigo-secreto
 
-Abrir el archivo index.html en el navegador web.
+- Abrir el archivo index.html en el navegador web.
 
 Tecnologías Utilizadas
 
-HTML5 para la estructura de la página.
+- HTML5 para la estructura de la página.
 
-CSS3 para el diseño y estilos.
+- CSS3 para el diseño y estilos.
 
-JavaScript para la lógica de funcionamiento y la selección aleatoria de amigos.
+- JavaScript para la lógica de funcionamiento y la selección aleatoria de amigos.
 
 Autor
 
-[Tu Nombre]
+José Morales
