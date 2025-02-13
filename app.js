@@ -3,7 +3,7 @@
 
 //Array que guardará los nombres de las personas agregadas
 
-let listaAmigos = []
+let listaAmigos = [];
 let listaMostrar= document.getElementById("listaAmigos");
 
 //Funcion que agregue un amigo a la lista
@@ -46,17 +46,26 @@ function mostrarAmigos(listaAmigos) {
     //Muestra el texto en el div
 }
 
+//Funcion que sortea un amigo de la lista
 function sortearAmigo(){
+    //Recibe el array y lo usa para hacer las verificaciones y la eleccion
     let listaSorteo = listaAmigos.slice();
-    //console.log(listaSorteo);
-    if(listaSorteo.length == 0){
+    //Verifica que haya al menos una persona para sortear
+    if(listaSorteo.length === 0){
+        //Mensaje en caso de que intente sortear sin personas agregadas
         alert("No hay ninguna persona para sortear");
     }else{
+        //Realiza el sorteo de numero aleatorio
         let amigoSorteado = Math.floor(Math.random() * listaSorteo.length);
+        //Usa el nombre en el array para sortear un amigo
         let nombreSorteado = listaSorteo[amigoSorteado];
+        //Obtiene el campo donde se imprimira el resultado en pantalla
         let nombreMostrado = document.getElementById("resultado");
+        //Muestra el mensaje en el resultado en pantalla
         let mensajeRsultado = `El amigo sorteado es: ${nombreSorteado}`;
+        //Envia el mensaje al div
         nombreMostrado.innerHTML = mensajeRsultado;
+        //Limpia la lista de amigos para mostrar solo el amigo sorteado
         listaMostrar.innerHTML = "";
     }
 }
